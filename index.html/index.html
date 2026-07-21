@@ -16,6 +16,7 @@
       --radius: 22px;
       --price: #1b4d34;
       --cezanne-green: #286927;
+      --cezanne-green-hover: #1f5120;
     }
     * { box-sizing: border-box; }
     html, body { margin:0; padding:0; background: var(--bg); color: var(--ink);
@@ -26,6 +27,7 @@
     .contact-buttons { text-align:center; margin-top: 16px; }
     .btn { display:block; width:fit-content; margin: 8px auto; background: var(--cezanne-green); color:#fff;
            padding: 12px 20px; border-radius: 999px; text-decoration:none; font-weight:700; }
+    .btn:hover { backgound: var(--cezanne-green-hover);}
     .headline { text-align:center; margin: 22px auto 10px; }
     .headline h1 { margin:0 0 8px; font-size: clamp(26px, 4.6vw, 40px); }
     .headline p { margin:0; font-size: 18px; opacity:.9; }
@@ -37,7 +39,8 @@
     .price { font-size: 18px; color: var(--price); font-weight: 800; margin-top: 10px; } /* larger, green price */
     .note { font-size: 15px; opacity:.9; }
     .scroll-button { background-color: var(--cezanne-green); color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 8px; cursor: pointer; }
-    .scroll-button:hover { background-color: #1f5120; }
+    .scroll-button:hover { background-color: var(--cezanne-green-hover); }
+    .liste-header { list-style-type: none; }
     footer { text-align:center; color:#444; padding: 24px 0 34px; }
   </style>
 </head>
@@ -47,7 +50,7 @@
     <div class="headline">
       <h1>Praktische Implantologie-Kurse direkt am Patienten.
       Der schnellste Weg zu mehr Sicherheit in der Implantologie</h1>
-      <ul>
+      <ul class="liste-header">
         <li>✅ Kleine Gruppen (3-5 TN)</li>
         <li>✅ enges 1:1 Mentoring</li>
         <li>✅ bis zu 20 selbst gesetzte Implantate</li>
